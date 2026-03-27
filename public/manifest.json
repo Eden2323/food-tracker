@@ -1,0 +1,17 @@
+{
+  "name": "Food Tracker",
+  "short_name": "Food Tracker",
+  "description": "Track your food, pantry and meals",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

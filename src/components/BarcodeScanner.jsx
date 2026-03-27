@@ -23,7 +23,9 @@ export default function BarcodeScanner({ onScan, onCancel }) {
             qrbox: { width: 260, height: 180 },
           },
           (decodedText) => {
-            // Success callback
+            // Success callback — mark as stopped before calling onScan
+            // so the unmount cleanup doesn't try to stop it again
+            startedRef.current = false
             scanner
               .stop()
               .then(() => {
@@ -100,6 +102,7 @@ export default function BarcodeScanner({ onScan, onCancel }) {
           { facingMode: 'environment' },
           { fps: 10, qrbox: { width: 260, height: 180 } },
           (decodedText) => {
+            startedRef.current = false
             scanner
               .stop()
               .then(() => onScan(decodedText))
