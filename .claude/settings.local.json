@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r /Users/edenhoward/Desktop/Food_list/tmp/vite-temp/. /Users/edenhoward/Desktop/Food_list/)",
+      "Bash(rm -rf /Users/edenhoward/Desktop/Food_list/tmp)"
+    ]
+  }
+}
