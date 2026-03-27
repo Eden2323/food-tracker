@@ -114,10 +114,10 @@ export default function AddItemModal({ isOpen, onClose, onSaved, item, prefill }
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 pb-16 sm:pb-0"
       onClick={handleBackdropClick}
     >
-      <div className="w-full sm:max-w-lg bg-gray-800 rounded-t-2xl sm:rounded-2xl border border-gray-700 max-h-[90vh] overflow-y-auto">
+      <div className="w-full sm:max-w-lg bg-gray-800 rounded-t-2xl sm:rounded-2xl border border-gray-700 max-h-[80vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-700">
           <h2 className="text-white font-semibold text-lg">
