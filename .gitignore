@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# --- agent layer (synced from aianswers-workflow) ---
+.env
+.env.*
+!.env.example
+.claude/worktrees/
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.venv/
+backups/
